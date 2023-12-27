@@ -24,7 +24,7 @@ ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
 TARGET_KERNEL_CONFIG += vendor/ext_config/rhode-default.config
 
 # Kernel Modules - Vendor Boot
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
 # Partitions
